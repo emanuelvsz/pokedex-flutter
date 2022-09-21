@@ -5,7 +5,7 @@ import 'package:pokedex/pages/pokemon_page.dart';
 void main() {
   runApp(
     const MaterialApp(
-      home: PokePage(),
+      home: HomePage(),
     ),
   );
 }

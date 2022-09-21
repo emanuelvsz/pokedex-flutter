@@ -11,7 +11,9 @@ class _PokePageState extends State<PokePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Text('Poke Page')
+        body: Text('Poke Page', style: TextStyle(
+
+        ),)
     );
   }
 }
