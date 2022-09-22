@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   Future fetch() async {
-    var url = 'https://pokeapi.co/api/v2/pokemon/bulbasaur';
+    var url = 'https://pokeapi.co/api/v2/home/bulbasaur';
     var response = await http.get(Uri.parse(url));
     print(response.body.length);
   }
