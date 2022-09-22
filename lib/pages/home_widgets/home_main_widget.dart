@@ -13,7 +13,7 @@ class _HomeMainState extends State<HomeMain> {
     double _height = MediaQuery.of(context).size.height;
     double _width = MediaQuery.of(context).size.width;
 
-    final _items = [1, 2, 3, 5, 5, 5, 5, 5];
+    List items = [1, 2, 3, 4, 0, 8, 2, 4];
 
     return Container(
       height: _height * 0.7,
@@ -25,9 +25,7 @@ class _HomeMainState extends State<HomeMain> {
             child: Center(
               child: Wrap(
                 direction: Axis.horizontal,
-                children: _items
-                    .map(
-                      (i) => Container(
+                children: items.map((i) => Container(
                         margin: EdgeInsets.all(8),
                         width: _width * .35,
                         height: _height * .25,
@@ -38,11 +36,10 @@ class _HomeMainState extends State<HomeMain> {
                           ),
                         ),
                         child: Center(
-                          child: Text('eita'),
+                          child: Text('Item'),
                         ),
                       ),
-                    )
-                    .toList(),
+                    ).toList(),
               ),
             ),
           ),

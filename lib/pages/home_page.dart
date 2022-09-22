@@ -35,11 +35,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
-      children: [
-        HomeHeader(),
-        HomeSearch(),
-        HomeMain()
-      ],
-    ));
+          children: [
+            HomeHeader(),
+            HomeSearch(),
+            HomeMain()
+          ],
+        ));
   }
 }
